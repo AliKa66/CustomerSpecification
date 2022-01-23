@@ -1,0 +1,14 @@
+<ng-container *ngIf="currentState == quizState.END">
+  <div class="text-center">
+    <h2>Play Again?</h2>
+    <button (click)="restartQuiz()" class="btn btn-dark">
+      <fa-icon [icon]="faRedo" size="2x"></fa-icon>
+    </button>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="currentState == quizState.PLAYING">
+  <button (click)="toNextQuestion()" [disabled]="nextButtonDisabled" class="float-end btn btn-dark">
+    <fa-icon [icon]="faCircleRight" size="2x"></fa-icon>
+  </button>
+</ng-container>

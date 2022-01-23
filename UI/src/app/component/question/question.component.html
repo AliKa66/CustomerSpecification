@@ -1,0 +1,12 @@
+<div class="card h-75">
+  <div [innerHtml]="question.question" class="text-center card-header"></div>
+  <div class="d-grid gap-2 col-5 mx-auto card-body">
+    <ng-container *ngFor="let answer of question.answers">
+      <button (click)="onClick(answer)"
+              [disabled]="buttonsDisabled" [innerHtml]="answer" class="btn"></button>
+    </ng-container>
+  </div>
+</div>
+<div>
+</div>
+

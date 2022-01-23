@@ -4,13 +4,9 @@ import com.bektas.customerspecification.TriviaWebClient;
 import com.bektas.customerspecification.mapper.TriviaApiResponseMapper;
 import com.bektas.customerspecification.model.AnsweredQuestion;
 import com.bektas.customerspecification.model.QuestionResponse;
-import com.bektas.customerspecification.model.TriviaApiResponse;
 import com.bektas.customerspecification.model.TriviaResult;
 import com.bektas.customerspecification.repository.TriviaRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
-import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
 import java.util.List;

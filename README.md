@@ -5,7 +5,7 @@
 ```
 Check Java version in Maven if an error occurs. It should be Java version 17.
 ```
-./mvnv -version
+./mvnw -version
 ```
 ### Runs the application
 ```
